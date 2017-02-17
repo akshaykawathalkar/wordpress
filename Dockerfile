@@ -40,7 +40,7 @@ FROM php:5.6-apache
 	#      echo "$WORDPRESS_SHA1 *wordpress.tar.gz" | sha1sum -c -; \
 	# upstream tarballs include ./wordpress/ so this gives us /usr/src/wordpress
 	   
-	     tar -xzf html.tar.gz -C /usr/src/; \
+	  #   tar -xzf html.tar.gz -C /usr/src/; \
 	#      rm wordpress.tar.gz; \
 	       chown -R www-data:www-data /usr/src/html
 	
