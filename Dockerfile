@@ -45,7 +45,7 @@ FROM php:5.6-apache
 	       chown -R www-data:www-data /usr/src/html
 	
 	COPY docker-entrypoint.sh /usr/local/bin/
-	COPY docker-compose.yml /usr/local/bin/
+	# COPY docker-compose.yml /usr/local/bin/
 	RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 	ENTRYPOINT ["docker-entrypoint.sh"]
 	CMD ["apache2-foreground"]
